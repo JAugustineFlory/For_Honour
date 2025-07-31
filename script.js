@@ -51,10 +51,17 @@ honours = [
     ]
 ];
 
-//Chooses random Honour array
-//Gets length of selected honor category
-function honoursLength() {
-    return honours.honour.length;
-};
 
-let output = honours[honour];
+//Get number of code categories & select Category
+let total = honours.length;
+let totalChoice = Math.floor(Math.random()*total);
+
+//Chooses random Honour array
+let category = honours[totalChoice];
+let numHonours = category.length;
+let honourChoice = Math.floor(Math.random()*numHonours);
+
+
+console.log(category);
+console.log(numHonours);
+console.log(honourChoice);
