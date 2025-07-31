@@ -36,6 +36,18 @@ honours = [
             'Hope',
             'Valor'
         ]
+    ],
+
+    //Bushido
+    bushido = [
+        'Justice - 義, gi',
+        'Courage - 勇, yū',
+        'Benevolence - 仁, jin',
+        'Respect - 礼, rei',
+        'Integrity - 誠, makoto',
+        'Honor - 名誉, meiyo',
+        'Loyalty - 忠義, chūgi',
+        'Self-Control - 自制, jizai'
     ]
 ];
 
