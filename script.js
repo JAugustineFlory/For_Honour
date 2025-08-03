@@ -1,44 +1,42 @@
 //Collections of Codes
 honours = [
     // Knight's collection
-    knights = [
-        //Code of Chivalry translated from The Song of Roland 
-        knightsCode = [
-            'To fear God and maintain His Church',
-            'To serve the liege lord in valour and faith',
-            'To protect the weak and defenceless',
-            'To give succour to widows and orphans',
-            'To refrain from the wanton giving of offence',
-            'To live by honour and for glory',
-            'To despise pecuniary reward',
-            'To fight for the welfare of all',
-            'To obey those placed in authority',
-            'To guard the honour of fellow knights',
-            'To eschew unfairness, meanness and deceit',
-            'To keep faith',
-            'At all times to speak the truth',
-            'To persevere to the end in any enterprise begun',
-            'To respect the honour of women',
-            'Never to refuse a challenge from an equal',
-            'Never to turn the back upon a foe'
-        ],
-        knightsCodeBurgandy = [
-            'Faith',
-            'Charity',
-            'Justice',
-            'Sagacity',
-            'Prudence',
-            'Temperance',
-            'Resolution',
-            'Truth',
-            'Liberality',
-            'Diligence',
-            'Hope',
-            'Valor'
-        ]
+    //Code of Chivalry translated from The Song of Roland 
+    knightsCode = [
+        'To fear God and maintain His Church',
+        'To serve the liege lord in valour and faith',
+        'To protect the weak and defenceless',
+        'To give succour to widows and orphans',
+        'To refrain from the wanton giving of offence',
+        'To live by honour and for glory',
+        'To despise pecuniary reward',
+        'To fight for the welfare of all',
+        'To obey those placed in authority',
+        'To guard the honour of fellow knights',
+        'To eschew unfairness, meanness and deceit',
+        'To keep faith',
+        'At all times to speak the truth',
+        'To persevere to the end in any enterprise begun',
+        'To respect the honour of women',
+        'Never to refuse a challenge from an equal',
+        'Never to turn the back upon a foe'
     ],
-
-    //Bushido
+    //Knight's Code as determined by the Duke of Burgandy
+    knightsCodeBurgandy = [
+        'Faith',
+        'Charity',
+        'Justice',
+        'Sagacity',
+        'Prudence',
+        'Temperance',
+        'Resolution',
+        'Truth',
+        'Liberality',
+        'Diligence',
+        'Hope',
+        'Valor'
+    ],
+    //Samurai Collection
     bushido = [
         'Justice - 義, gi',
         'Courage - 勇, yū',
@@ -51,17 +49,19 @@ honours = [
     ]
 ];
 
-
 //Get number of code categories & select Category
 let total = honours.length;
 let totalChoice = Math.floor(Math.random()*total);
+
 
 //Chooses random Honour array
 let category = honours[totalChoice];
 let numHonours = category.length;
 let honourChoice = Math.floor(Math.random()*numHonours);
 
-
+//Output test
+console.log(totalChoice);
 console.log(category);
 console.log(numHonours);
 console.log(honourChoice);
+
