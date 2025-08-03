@@ -49,19 +49,18 @@ honours = [
     ]
 ];
 
-//Get number of code categories & select Category
-let total = honours.length;
-let totalChoice = Math.floor(Math.random()*total);
+//Get number of code categories & selects Category
+let honoursLength = honours.length;
+
+let categoryChoice = Math.floor(Math.random()*honoursLength);
 
 
-//Chooses random Honour array
-let category = honours[totalChoice];
-let numHonours = category.length;
-let honourChoice = Math.floor(Math.random()*numHonours);
+
+//Chooses random code from selected Category
+let choiceLength = 
+
 
 //Output test
-console.log(totalChoice);
-console.log(category);
-console.log(numHonours);
-console.log(honourChoice);
+console.log(honoursLength);
+console.log(categoryChoice);
 
