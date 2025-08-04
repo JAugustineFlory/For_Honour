@@ -51,16 +51,29 @@ honours = [
 
 //Get number of code categories & selects Category
 let honoursLength = honours.length;
-
-let categoryChoice = Math.floor(Math.random()*honoursLength);
-
+let categoryChoice = honours[Math.floor(Math.random()*honoursLength)];
 
 
 //Chooses random code from selected Category
-let choiceLength = 
+let choiceLength = categoryChoice.length;
+let choice = Math.floor(Math.random()*choiceLength);
+
+
 
 
 //Output test
+let output = categoryChoice[choice];
+
+/*
 console.log(honoursLength);
 console.log(categoryChoice);
+console.log(choiceLength);
+console.log(choice);*/
+//console.log(output);
 
+//Wraps all into nice function
+function honour() {
+    return console.log(output);
+};
+
+honour();
